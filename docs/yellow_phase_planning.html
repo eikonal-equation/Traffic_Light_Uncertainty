@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Traffic Light Uncertainty">
+    <meta name="author" content="Mallory E. Gaspard">
+<!--     <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Traffic Light Uncertainty</title>
+
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="starter-template.css" rel="stylesheet"> -->
+    <link href="album.css" rel="stylesheet">
+
+    <!-- <link rel="SHORTCUT ICON" href="imgs/favicon.ico"> -->
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">Traffic Light Uncertainty</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="examples.html">Examples <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+
+      <section class="jumbotron text-left">
+        <div class="container">
+          <h1 class="jumbotron-heading">Planning During the Yellow, Red, and Green Phases</h1>
+          <div class="container bg-light">
+            <p>These supplemental movies and figures correspond to Example 3 of the following paper: </p>
+            <p><a class="btn btn-secondary" href="https://arxiv.org/abs/2201.04521" target="_blank" role="button">View manuscript on Arxiv &raquo;</a></p>
+          </div>
+        </div>
+      </section>
+
+      <h2>Planning During the Yellow, Red, and Green Phases: </h2>
+        <div class="container bg-light">
+        <p>
+            <ul>
+              <li> Planning begins at \(t = T_Y\).</li>
+              <li> Driver knows \(T_Y\), \(T_R\) and \(T_G\) with certainty.</li>
+              <li> Yellow light duration, \(D_Y = 3s\).</li>
+              <li> Red light duration, \(D_R = 60s\).</li>
+              <li> Objective preferences: \((c_1,c_2,c_3) = (1/3, 1/3, 1/3)\). </li>
+            </ul>
+
+          In all figures, the white region appearing in the domain corresponds to illegal \((d,v)\) configurations belonging to \(\mathcal{I}_Y(t)\).
+          As \(t \rightarrow T_R\), \(\mathcal{I}_Y(t) \rightarrow \mathcal{I}_R(t)\).
+
+        </p>
+        </div>
+      </p>
+
+      <div class="container">
+        <h3>Feedback Controls and Trajectory Tracing:</h3>
+        <div class="container bg-light">
+          <p>
+            <ul>
+              <li> Traces two optimal trajectories starting from \((d,v) = (d_0, v_0)\). </li>
+              <li> Black circle: \((d_0, v_0)\) = \((43, 10)\).</li>
+              <li> White circle: \((d_0, v_0)\) = \((48, 10)\).</li>
+              <li> \(t = 0\) in the animation corresponds to \(t = T_Y\).</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <center>
+          <video width="720" height="540" controls>
+            <source src="movies/yrg_opt_driving_1.mp4" type="video/mp4">
+          </video>
+          </center>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3>Value Function Contour Plotting:</h3>
+        <div class="container bg-light">
+          <p>
+            This section displays two snapshots of the value function contours during the yellow-light phase.
+            <ul>
+              <li> \(u(d,v,t) = + \infty\) at all \((d,v) \in \mathcal{I}_Y(t)\) </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-6 shadow-sm">
+                <div class="card-body">
+                  <h4 class="card-text">\(u(d,v,t)\) at \(t = T_Y\): </h4>
+                    <img src="figures/yrg/yrg_vf_t0.png" alt = "Value function at t = 0" class="img-fluid">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-6 shadow-sm">
+                <div class="card-body">
+                  <h4 class="card-text">\(u(d,v,t)\) at \(t = T_Y + 1.5s\):</h4>
+                    <img src="figures/yrg/yrg_vf_t1pt5.png" alt = "Value function at t = 1.5s" class="img-fluid">
+                </div>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="container bg-light">
+         <p>
+           <a class="btn btn-secondary" href="red_phase_planning.html" role="button">&laquo; Red Phase Planning</a>
+           <a class="btn btn-secondary" href="uncertain_green_planning.html" role="button"> Uncertain Green Phase Planning &raquo;</a>
+         </p>
+       </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+       <h6>Disclaimer</h6>
+        <p class="text-muted">
+          This report was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States Government or any agency thereof.
+        </p>
+        <h6>Copyright Notice</h6>
+        <p"> The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder. </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- MathJax files -->
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>

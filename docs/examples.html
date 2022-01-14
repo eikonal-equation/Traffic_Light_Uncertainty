@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Traffic Light Uncertainty">
+    <meta name="author" content="Mallory E. Gaspard">
+<!--     <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Traffic Light Uncertainty</title>
+
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="starter-template.css" rel="stylesheet"> -->
+    <link href="album.css" rel="stylesheet">
+
+    <!-- <link rel="SHORTCUT ICON" href="imgs/favicon.ico"> -->
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">Traffic Light Uncertainty</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Examples <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+
+      <section class="jumbotron text-left">
+        <div class="container">
+          <h1 class="jumbotron-heading">Optimal Driving Examples</h1>
+          <div class="container bg-light">
+            <p>These examples are from the following paper: </p>
+            <p><a class="btn btn-secondary" href="https://arxiv.org/abs/2201.04521" target="_blank" role="button">View manuscript on Arxiv &raquo;</a></p>
+          </div>
+        </div>
+      </section>
+      <div>
+        <p>
+          All of the computations use the following parameters:
+          <ul>
+            <li>Max allowed distance: \(\bar{d} = 100\) m </li>
+            <li>Traffic light location: \(d_{\ell} = 0\) m </li>
+            <li>Target location: \(d^* = -100\) m </li>
+            <li>Max allowed velocity: \(\bar{v} = 45\) mph \(\approx 20.12 m/s\) </li>
+            <li>Min allowed velocity: \(v = 0\) mph </li>
+            <li>Min acceleration: \(-\alpha = -3.8\) m/s/s </li>
+            <li>Max acceleration: \(\beta = +3.8\) m/s/s </li>
+            <li>Yellow light duration: \(D_Y = 3\) s </li>
+            <li>Red light duration: \(D_R = 60\) s </li>
+          </ul>
+
+        We conduct all of our examples / experiments on a \(345 \times 181\) grid in \((d,v)\) space.
+        </p>
+      </div>
+
+    <h2> Planning in the Indefinite Green Phase: </h2>
+      <div class="container bg-light">
+        <p><a class="btn btn-secondary" href="indef_green_phase_planning.html" role="button">Green Phase Planning &raquo;</a></p>
+    </div>
+
+    <h2> Planning in the Red and Green Phases: </h2>
+    <div class="container bg-light">
+      <p><a class="btn btn-secondary" href="red_phase_planning.html" role="button">Red Phase Planning &raquo;</a></p>
+    </div>
+
+    <h2> Planning in the Yellow, Red, and Green Phases: </h2>
+    <div class="container bg-light">
+      <p><a class="btn btn-secondary" href="yellow_phase_planning.html" role="button">Yellow Phase Planning &raquo;</a></p>
+    </div>
+
+    <h2> Planning in the Uncertain Green Phase: </h2>
+    <div class="container bg-light">
+      <p><a class="btn btn-secondary" href="uncertain_green_planning.html" role="button">Uncertain Green Phase Planning &raquo;</a></p>
+    </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+       <h6>Disclaimer</h6>
+        <p class="text-muted">
+          This report was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States Government or any agency thereof.
+        </p>
+        <h6>Copyright Notice</h6>
+        <p"> The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder. </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- MathJax files -->
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
+</html>
