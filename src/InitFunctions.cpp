@@ -20,6 +20,11 @@
  *
  * Description: This file contains the functions utilized in initializing
  * the grids, parameters, and variables used throughout Optimal Driving.
+ *
+ * DISCLAIMER: The location of the traffic light itself cannot be changed. While
+ * it is possible to alter the target position (gDTarget) and the maximum allowed
+ * position (gDMax), the traffic light is always assumed to be fixed at the
+ * midpoint between these two positions. 
  *============================================================================*/
 
 //---------------------Libraries----------------------------------------------
