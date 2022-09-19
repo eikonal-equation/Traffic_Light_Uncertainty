@@ -11,7 +11,9 @@ This program is free software: you can redistribute it and/or modify it under th
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
 # Manuscript #
-The Optimal Driving manuscript can be found [here](https://arxiv.org/abs/2201.04521).
+The Optimal Driving manuscript can be found [here](https://www.sciencedirect.com/science/article/pii/S2405896322011661).
+
+An earlier preprint version can be found [here](https://arxiv.org/abs/2201.04521).
 
 # Contributions & Acknowledgements # 
   * The problem statement and the solution strategy were developed by Alexander Vladimirsky and Mallory E. Gaspard.
